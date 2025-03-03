@@ -6,3 +6,7 @@ This is the *Git Internals* project I made myself.
 Here's the link to the project: https://hyperskill.org/projects/110
 
 Check out my profile: https://hyperskill.org/profile/619357970
+
+
+## Ting jeg lærte
+Fått brukt dataclasses til å holde informasjon om git-objekter. Fått laget min første extension function på en eksisterende klasse(byteArray). I tillegg har jeg fått erfaring med fil og strengbehandling.
