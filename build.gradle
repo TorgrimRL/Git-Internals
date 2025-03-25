@@ -61,6 +61,19 @@ subprojects {
     tasks.withType(JavaCompile) {
         options.encoding = 'utf-8'
     }
+    if (project.name == "Git_Internals-task") {
+        application {
+            mainClass.set("gitinternals.MainKt")
+        }
+        jar {
+            manifest {
+                attributes(
+                        'Main-Class': application.mainClass.get()
+                )
+            }
+            from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+        }
+    }
 }
 
 project(':util') {

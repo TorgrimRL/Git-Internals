@@ -27,6 +27,7 @@ rootProject.projectDir.eachDirRecurse {
         parts.add(sanitizeName(name.toString()))
     }
     def moduleName =  parts.join("-")
+    println "Inkluderer modul: $moduleName" // Utskrift av modulnavnet
     include "$moduleName"
     project(":$moduleName").projectDir = it
 }
